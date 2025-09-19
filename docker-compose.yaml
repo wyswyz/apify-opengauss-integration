@@ -1,0 +1,20 @@
+services:
+  opengauss:
+    image: opengauss/opengauss-server:latest
+    environment:
+      GS_USERNAME: GSDBUSER
+      GS_PASSWORD: Apify@123
+      GS_DB: gs_apify
+    volumes:
+      - ./volumes/opengauss/data:/var/lib/opengauss/data
+    healthcheck:
+      test: [ "CMD-SHELL", "netstat -lntp | grep tcp6 > /dev/null 2>&1" ]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+    ports:
+       - "8888:5432"
+
+networks:
+  default:
+    name: milvus
