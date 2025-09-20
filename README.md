@@ -4,7 +4,7 @@ This project was inspired by and derived from the official `apify/actor-vector-d
 
 | Actor                       | Actor badge |
 |-----------------------------|---------------------|
-| [OpenGauss](https://opengauss.org/) |  |
+| [OpenGauss](https://opengauss.org/) | [![Opengauss integration](https://apify.com/actor-badge?actor=wyswyz/opengauss-integration)](https://apify.com/wyswyz/opengauss-integration) |
 
 #### Vector database integrations (Actors)
 
